@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(109, 151, 161, 0.895);
+}
+.img{
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-size: larger;
+    font-weight: bolder;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgba(36, 210, 68, 0.89);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.marquee{
+    background-color: rgba(164, 224, 233, 0.952) ;
+}
+.about{
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://img.freepik.com/free-vector/healthcare-background-with-medical-symbols-hexagonal-frame_1017-26363.jpg?w=1380&t=st=1660569459~exp=1660570059~hmac=3ba5ca89bcdfa3ee2d6d66f48e91f4a3a6bdd68fb7565f9b807aeba358650949);
+    background-size: cover;
+}
+.about h2{
+    margin-top: 0%;
+    font-weight: bolder;
+    color: rgb(232, 216, 216);
+}
+.about p{
+    margin-top: 10%;
+    font-weight: bold;
+    align-items: stretch;
+    margin-right: 50%;
+}
+.contact h2{
+    font-weight: bolder;
+}
+.contact{
+    color: rgb(235, 222, 222);
+    font-weight: bold;
+    background-color: rgb(94, 179, 178);
+    background-size: cover;
+}
+.icons{
+    align-items: center;
+    padding-left: 45%;
+}
